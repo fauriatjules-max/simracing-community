@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - SimRacing Community</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="logo">SRC</div>
+            <h1 class="app-title">SimRacing Community</h1>
+            <div class="profile-icon" onclick="redirectToProfile()">👤</div>
+        </header>
+
+        <main class="games-container">
+            <div class="games-list" id="gamesList">
+                <!-- Les jeux seront chargés dynamiquement -->
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active" onclick="redirectToHome()">
+                <span>🏠</span>
+                <span>Accueil</span>
+            </div>
+            <div class="nav-item" onclick="redirectToChat()">
+                <span>💬</span>
+                <span>Chat</span>
+            </div>
+            <div class="nav-item" onclick="redirectToProfile()">
+                <span>👤</span>
+                <span>Profil</span>
+            </div>
+        </nav>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/games.js"></script>
+</body>
+</html>
