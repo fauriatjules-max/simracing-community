@@ -129,3 +129,7 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+// Charger le système de notifications
+const notificationScript = document.createElement('script');
+notificationScript.src = 'js/notifications.js';
+document.head.appendChild(notificationScript);
